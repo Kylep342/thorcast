@@ -1,0 +1,6 @@
+[submodule "thorcast-server"]
+	path = thorcast-server
+	url = https://github.com/Kylep342/thorcast-server.git
+[submodule "thorcast-discord"]
+	path = thorcast-discord
+	url = https://github.com/Kylep342/thorcast-discord.git
