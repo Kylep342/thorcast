@@ -7,7 +7,7 @@ services:
       - "5000:5000"
     env_file:
       - ./thorcast-server/env.list
-  doscord:
+  thorcast-discord:
     build: ./thorcast-discord
     env_file:
      - ./thorcast-discord/env.list
