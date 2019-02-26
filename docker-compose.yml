@@ -3,11 +3,15 @@ version: "3"
 services:
   thorcast-server:
     build: ./thorcast-server
+    volumes:
+      - ./thorcast-server:/app/thorcast-server
     ports:
       - "5000:5000"
     env_file:
       - ./thorcast-server/env.list
   thorcast-discord:
     build: ./thorcast-discord
+    volumes:
+      - ./thorcast-discord:/app/thorcast-discord
     env_file:
      - ./thorcast-discord/env.list
