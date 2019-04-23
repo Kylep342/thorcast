@@ -6,9 +6,9 @@ Thorcast is a weather forecasting service
 
 Currently, it is comprised of 3 components:
 
-- (thorcast-server)[https://github.com/kylep342/thorcast-server]
-- (thorcast-slack)[https://github.com/kylep342/thorcast-slack]
-- (thorcast-discord)[https://github.com/kylep342/thorcast-discord]
+- [thorcast-server](https://github.com/kylep342/thorcast-server)
+- [thorcast-slack](https://github.com/kylep342/thorcast-slack)
+- [thorcast-discord](https://github.com/kylep342/thorcast-discord)
 
 ## Motivations
 
