@@ -12,7 +12,7 @@ Currently, it is comprised of 3 components:
 
 ## Motivations
 
-I built this project as a tool to learn several tools/technologies:
+I built this project as a tool to learn several technologies:
 
 - Developing web servers (Flask)
 - Caching (Redis)
