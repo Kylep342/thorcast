@@ -4,3 +4,6 @@
 [submodule "thorcast-discord"]
 	path = thorcast-discord
 	url = https://github.com/Kylep342/thorcast-discord.git
+[submodule "thorcast-slack"]
+	path = thorcast-slack
+	url = https://github.com/Kylep342/thorcast-slack.git
