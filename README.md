@@ -35,3 +35,4 @@ I have had a blast overcoming hurdles along the way, and have enjoyed architecti
 - Making the Slack bot available to multiple Slack servers
 - A web UI
 - Moving to discord.py
+- **DEPLOY IT SOMEWHERE** - I need to devote time to research hosting options.
