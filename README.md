@@ -14,24 +14,23 @@ Currently, it is comprised of 3 components:
 
 I built this project as a tool to learn several technologies:
 
-- Developing web servers (Flask)
+- Developing web servers (Go)
 - Caching (Redis)
 - Building chat bots (slackclient, discord.js)
 - Service orchestration (Docker, docker-compose)
 
 This project also enabled me to enhance some of my current skills:
 
-- Python
+- Go
 - Postgresql
 - Node.js
 - Git
-- pytest
 
 I have had a blast overcoming hurdles along the way, and have enjoyed architecting a (simple) ecosystem.
 
 ## Future enhancements
 
-- Fully async webserver (sanic)
+- ~~Fully async webserver (sanic)~~ Moved to Go.
 - Making the Slack bot available to multiple Slack servers
 - A web UI
 - Moving to discord.py
