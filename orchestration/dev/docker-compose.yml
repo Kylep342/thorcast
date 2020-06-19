@@ -15,6 +15,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
+      - $HOME/docker_volumes/thor_db:/var/lib/postgresql/data
       - ../../thorcast-server/db/models/create_geocodex.sql:/docker-entrypoint-initdb.d/initdb.sql
     command: [postgres, -c, max_connections=10000]
   thor-redis:
