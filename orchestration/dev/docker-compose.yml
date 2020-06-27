@@ -19,7 +19,7 @@ services:
       - ../../thorcast-server/db/models/ddl.sql:/docker-entrypoint-initdb.d/initdb.sql
     command: [postgres, -c, max_connections=10000]
   thor-redis:
-    image: redis:5.0.7
+    image: redis:6.0.5
     networks:
       - thorcast
     ports:
