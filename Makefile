@@ -1,5 +1,8 @@
-local-up:
+up:
 	docker-compose -f orchestration/dev/docker-compose.yml up --build
 
-local-down:
+down:
 	docker-compose -f orchestration/dev/docker-compose.yml down
+
+db:
+	docker-compose -f orchestration/dev/docker-compose.yml up --build db redis

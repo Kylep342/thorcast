@@ -4,7 +4,7 @@ networks:
   thorcast:
 
 services:
-  thor-postgres:
+  db:
     image: postgres:11.2
     environment:
       - POSTGRES_USER=thorcast
@@ -18,7 +18,7 @@ services:
       - $HOME/docker_volumes/thor_db:/var/lib/postgresql/data
       - ../../thorcast-server/db/models/ddl.sql:/docker-entrypoint-initdb.d/initdb.sql
     command: [postgres, -c, max_connections=10000]
-  thor-redis:
+  redis:
     image: redis:6.0.5
     networks:
       - thorcast
@@ -36,7 +36,7 @@ services:
     ports:
       - "8000:8000"
     env_file:
-      - ../../thorcast-server/env.list
+      - ../../thorcast-server/.env
   thorcast-discord:
     build: ../../thorcast-discord
     volumes:
@@ -44,7 +44,7 @@ services:
     networks:
       - thorcast
     env_file:
-      - ../../thorcast-discord/env.list
+      - ../../thorcast-discord/.env
   thorcast-slack:
     build: ../../thorcast-slack
     volumes:
@@ -52,4 +52,4 @@ services:
     networks:
       - thorcast
     env_file:
-      - ../../thorcast-slack/env.list
+      - ../../thorcast-slack/.env
